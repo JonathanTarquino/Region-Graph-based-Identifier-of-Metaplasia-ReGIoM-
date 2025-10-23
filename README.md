@@ -2,6 +2,7 @@
 Repository for python tools applied to get a Region Graph-based Identifier of Metaplasia (ReGIoM) that unsupervisely identifies intestinal metaplasia in stomach histology samples. The main script uses diferenrent functions including ```HRgraph.py``` and ```LRgraph.py``` to built High Resolution and Low resolution graphs as presented in ```GastricV3.ipynb```
 
 ### This is how it looks a complete execution of the whole pipeline
+As shown in figure bellow, the ReGIoM is defined as an unsupervised approach that idntifies intestinal metaplasia by using multiple versions of WholeSlide Images (WSI) at different magnification.This strategy split each WSI into non-squared regions at a low magnification (1×), by using SLIC superpixel estimation, based on intensity valueas of the image at such magnification. Then, each of these regions is subdivided in multiple elements that are finally characterized in terms of shape and texture features, allowing the selection of particular elements as nodes of a high-resolution graph that provides a complete characterization of the tissue given the spatial and features connection between them.
 
 ![Model](https://github.com/JonathanTarquino/Region-Graph-based-Identifier-of-Metaplasia-ReGIoM-/blob/main/RegiOM_pipeline.png)
 ```
