@@ -3,7 +3,7 @@ Repository for python tools applied to get a Region Graph-based Identifier of Me
 
 ### This is how it looks a complete execution of the whole pipeline
 
-![Model](Paste_link_here)
+![Model](https://github.com/JonathanTarquino/Region-Graph-based-Identifier-of-Metaplasia-ReGIoM-/blob/main/RegiOM_pipeline.png)
 ```
 i = -1
 all_features = []
